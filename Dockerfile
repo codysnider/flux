@@ -24,4 +24,4 @@ EXPOSE 8501
 # ENV FLUX_DEV=<path_to_flux_dev_sft_file>
 # ENV AE=<path_to_ae_sft_file>
 
-CMD ["python", "-m", "flux", "--name", "flux-schnell", "--height", "1024", "--width","1024","--prompt", "a mouse on the moon"]
+CMD ["python", "-m", "flux", "--name", "flux-schnell", "--height", "1024", "--width","1024","--prompt", "a mouse on the moon", "--device", "cuda"]
