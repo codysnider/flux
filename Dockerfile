@@ -9,10 +9,10 @@ RUN apt-get update && \
     libglib2.0-0 \
     && rm -rf /var/lib/apt/lists/*
 
-COPY setup.py .
-COPY pyproject.toml .
+COPY requirements.txt .
 
-RUN pip install -e '.[all]'
+RUN pip3 install .
+
 COPY . .
 EXPOSE 8501
 
