@@ -14,6 +14,9 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
+
+RUN pip install -e '.[all]'
+
 EXPOSE 8501
 
 # Define environment variables for model paths (update these paths as needed)
