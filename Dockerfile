@@ -11,7 +11,7 @@ RUN apt-get update && \
 
 COPY requirements.txt .
 
-RUN pip3 install .
+RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 EXPOSE 8501
