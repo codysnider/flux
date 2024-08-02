@@ -19,6 +19,8 @@ RUN pip install -e '.[all]'
 
 EXPOSE 8501
 
+ENV CUDA_VISIBLE_DEVICES=0
+
 # Define environment variables for model paths (update these paths as needed)
 # ENV FLUX_SCHNELL=<path_to_flux_schnell_sft_file>
 # ENV FLUX_DEV=<path_to_flux_dev_sft_file>
