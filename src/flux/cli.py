@@ -154,7 +154,9 @@ def main(
         else:
             idx = 0
 
-    print("***"+torch_device+"***")
+    print("***")
+    print(torch_device)
+    print("***")
 
     # init all components
     t5 = load_t5(torch_device, max_length=256 if name == "flux-schnell" else 512)
