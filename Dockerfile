@@ -26,4 +26,4 @@ ENV CUDA_VISIBLE_DEVICES=0
 # ENV FLUX_DEV=<path_to_flux_dev_sft_file>
 # ENV AE=<path_to_ae_sft_file>
 
-CMD ["CUDA_VISIBLE_DEVICES=0", "python", "-m", "flux", "--name", "flux-schnell", "--height", "1024", "--width","1024","--prompt", "a mouse on the moon", "--device", "cuda"]
+CMD ["python", "-m", "flux", "--name", "flux-schnell", "--height", "1024", "--width","1024","--prompt", "a mouse on the moon", "--device", "cuda"]
